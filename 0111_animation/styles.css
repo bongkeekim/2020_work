@@ -1,0 +1,138 @@
+body {
+  height: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.DatBox {
+  height: 400px;
+  width: 400px;
+  background-color: #76c4c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DatAniBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 2s TurnAni infinite;
+}
+
+.datt {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 100%;
+  margin: 10px;
+}
+@keyframes TurnAni {
+  40% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+.BarBox {
+  height: 400px;
+  width: 400px;
+  background-color: #1eac9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar1:first-child {
+  height: 20px;
+  width: 10px;
+  margin: 5px;
+  background-color: white;
+  animation: 1s ScaleBar1 infinite ease-in-out;
+}
+@keyframes ScaleBar1 {
+  0% {
+    transform: none;
+  }
+  20% {
+    transform: scale(1, 5);
+  }
+  40% {
+    transform: none;
+  }
+}
+
+.bar1:nth-child(2) {
+  height: 20px;
+  width: 10px;
+  margin: 5px;
+  background-color: white;
+  animation: 1s ScaleBar2 infinite ease-in-out;
+}
+@keyframes ScaleBar2 {
+  10% {
+    transform: none;
+  }
+  30% {
+    transform: scale(1, 5);
+  }
+  50% {
+    transform: none;
+  }
+}
+.bar1:nth-child(3) {
+  height: 20px;
+  width: 10px;
+  margin: 5px;
+  background-color: white;
+  animation: 1s ScaleBar3 infinite ease-in-out;
+}
+@keyframes ScaleBar3 {
+  20% {
+    transform: none;
+  }
+  40% {
+    transform: scale(1, 5);
+  }
+  60% {
+    transform: none;
+  }
+}
+.bar1:nth-child(4) {
+  height: 20px;
+  width: 10px;
+  margin: 5px;
+  background-color: white;
+  animation: 1s ScaleBar4 infinite ease-in-out;
+}
+@keyframes ScaleBar4 {
+  30% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1, 5);
+  }
+  70% {
+    transform: none;
+  }
+}
+.bar1:last-child {
+  height: 20px;
+  width: 10px;
+  margin: 5px;
+  background-color: white;
+  animation: 1s ScaleBar5 infinite ease-in-out;
+}
+@keyframes ScaleBar5 {
+  40% {
+    transform: none;
+  }
+  60% {
+    transform: scale(1, 5);
+  }
+  80% {
+    transform: none;
+  }
+}

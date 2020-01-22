@@ -1,0 +1,19 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.chice__word {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* https://blog.naver.com/ang_/221740158130 */

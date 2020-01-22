@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f9fafc;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.camera {
+  margin: 30px 15px;
+  position: relative;
+  width: 500px;
+  height: 370px;
+  z-index: 1;
+}
+
+.Pic {
+  position: absolute;
+  z-index: 3;
+  width: 500px;
+  height: 370px;
+}
+.Pic:hover ~ .Take {
+  outline: none;
+  animation: camera 0.3s linear forwards;
+}
+@keyframes camera {
+  from {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(20px, 20px);
+    z-index: 4;
+  }
+}
+
+.CameraPic {
+  width: 500px;
+  height: 370px;
+}
+.Take {
+  width: 500px;
+  height: 370px;
+  position: absolute;
+  background-color: #273949;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+.top {
+  color: white;
+  font-size: 40px;
+}
+.mid {
+  color: pink;
+  font-size: 20px;
+}
+.redbox {
+  margin-top: 50px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.game {
+  margin: 30px 15px;
+  width: 500px;
+  height: 370px;
+  overflow: hidden;
+}
+
+.GamePic:hover {
+  outline: none;
+  animation: game 0.3s linear forwards;
+}
+.GamePic:hover ~ .TakeGame {
+  outline: none;
+  animation: game 0.3s linear forwards;
+}
+@keyframes game {
+  from {
+  }
+  to {
+    transform: translateY(-90px);
+  }
+}
+.GamePic {
+  width: 500px;
+  height: 370px;
+
+  background-color: yellow;
+}
+.Pic {
+  width: 500px;
+  height: 370px;
+}
+.TakeGame {
+  width: 500px;
+  height: 170px;
+  background-color: #273949;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.top {
+  color: white;
+  font-size: 40px;
+}
+.mid {
+  color: pink;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.redbox {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.sapari {
+  margin: 30px 15px;
+  position: relative;
+  width: 500px;
+  height: 370px;
+  z-index: 1;
+}
+
+.SapariPic:hover {
+  outline: none;
+  animation: safari 0.3s linear forwards;
+}
+@keyframes safari {
+  from {
+  }
+  to {
+    transform: translateY(-50px);
+    transform: scale(0.7);
+  }
+}
+
+.SapariPic {
+  position: absolute;
+  z-index: 3;
+  width: 500px;
+  height: 370px;
+}
+.Pic {
+  width: 500px;
+  height: 370px;
+}
+.TakeSapari {
+  width: 500px;
+  height: 370px;
+  position: absolute;
+  background-color: #273949;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
