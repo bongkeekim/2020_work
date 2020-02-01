@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(95, 168, 105);
+}
+
+body {
+  color: orange;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
