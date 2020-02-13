@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bongkee_JS</title>
+  </head>
+  <body>
+    <h1>Loop & Array</h1>
+    <!-- <h2>Co workers</h2>
+    <ul>
+      <li>bongkee</li>
+      <li>zoo</li>
+      <li>cd100</li>
+      <li>1000hs</li>
+    </ul> -->
+    <script>
+      var coworkers = ["bongkee", "zoo", "cd100", "1000hs"];
+    </script>
+    <h2>Co workers</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while (i < coworkers.length) {
+          document.write(
+            '<li><a href="http://a.com/' +
+              coworkers[i] +
+              '">' +
+              coworkers[i] +
+              "</a></li>"
+          );
+          i = i + 1;
+        }
+      </script>
+    </ul>
+  </body>
+</html>

@@ -2,39 +2,36 @@ body {
   font-family: sans-serif;
   padding: 0;
   margin: 0;
-  padding-top: 100px; /* Height of the header */
+  padding-top: 100px;
   height: 1500px;
 }
-nav {
+.redBox {
   background-color: #ff7879;
   height: 100px;
   width: 100%;
   position: fixed;
   top: 0px;
-  z-index: 1; /* 👈🏻 Magic, remove it, see what happens */
-}
-
-.box {
-  display: inline-block;
-  height: 100%;
-  vertical-align: top; /* 👈🏻 Magic, remove it, see what happens */
+  z-index: 1;
 }
 
 .blueBox {
-  display: inline-block;
   background-color: #7ed6df;
-  width: 70%;
+  display: inline-block;
+  height: 100%;
+  width: 65%;
+  vertical-align: top;
 }
 
-.blueBox h1 {
+h5 {
   color: white;
-  margin-top: 50px;
+  padding-top: 50px;
   margin-left: 50px;
+  font-weight: 900;
 }
 
 .yellowBox {
   background-color: #ffcc02;
-  width: 28%;
+  width: 25%;
   border: 5px solid grey;
   display: inline-block;
   height: 100%;
@@ -43,10 +40,9 @@ nav {
 
 .greenBox {
   background-color: #bbdc58;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 100px;
   position: absolute;
-  top: -30px;
-  left: -50px;
-  z-index: 2; /* 👈🏻 Magic, remove it, see what happens */
-}
+  top: -50px;
+  left: -70px;
+  z-index: 2;

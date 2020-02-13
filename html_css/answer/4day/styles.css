@@ -3,29 +3,45 @@ body {
   height: 100%;
 }
 body {
-  font-family: sans-serif;
   background-color: #1c90ff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .box {
   width: 200px;
   height: 200px;
+  border-radius: 20px;
   background-color: #ff6b81;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
+.nBox {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  border-radius: 20px;
+  justify-content: space-around;
+}
 
-.tinyBox {
+.gBox {
   background-color: #d8d8d8;
   width: 50px;
   height: 50px;
+  border-radius: 10px;
 }
 
-.tinyBox:nth-child(2):hover {
+.gBox:nth-child(2):hover {
   background-color: red;
+}
+
+/* .nBox#center .gBox :nth-child(2):hover {
+  background-color: orange;
+} */
+.nBox#Tb .gBox {
+  background-color: #d8d8d8;
 }
